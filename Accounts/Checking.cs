@@ -2,7 +2,7 @@ namespace BankAccountSimulator.Accounts
 {
     public class Checking
     {
-        private decimal balance;
+        protected decimal balance;
         public string Owner { get; set; }
 
         public Checking(string owner, decimal balance)
@@ -39,6 +39,12 @@ namespace BankAccountSimulator.Accounts
         public decimal GetBalance()
         {
             return balance;
+        }
+
+        public virtual void AddInterest(decimal percent)
+        {
+            decimal interest = 1 * 500 * percent;
+            balance += interest;
         }
     }
 }
