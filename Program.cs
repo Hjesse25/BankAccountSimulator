@@ -19,5 +19,3 @@ account2.AddInterest(0.03M);
 
 decimal account2Balance = account2.GetBalance();
 Console.WriteLine($"The total balance for {account2.Owner} is {account2Balance}");
-
-
