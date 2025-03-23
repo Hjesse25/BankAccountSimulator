@@ -1,11 +1,11 @@
-namespace BankAccountSimulator
+namespace BankAccountSimulator.Accounts
 {
-    public class BankAccount
+    public class Checking
     {
         private decimal balance;
         public string Owner { get; set; }
 
-        public BankAccount(string owner, decimal balance)
+        public Checking(string owner, decimal balance)
         {
             Owner = owner;
             Deposit(balance);
